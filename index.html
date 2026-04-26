@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Happy 3rd Anniversary My Love 💕</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Floating Background Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="typewriter" id="typewriter">Happy 3rd Anniversary My Love 😍💕</h1>
+            <p class="subtitle fade-in">3 years of love, memories, and us...😌</p>
+            <div class="floating-hearts">
+                <div class="heart">❤️</div>
+                <div class="heart">💖</div>
+                <div class="heart">💕</div>
+                <div class="heart">💗</div>
+                <div class="heart">❤️</div>
+            </div>
+            <button class="cta-button" onclick="scrollToSection('gallery')">
+                Start the Celebration 🎉
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Timer -->
+    <section class="timer-section">
+        <div class="container">
+            <h2 class="section-title">Our Time Together ⏳❤️</h2>
+
+        <div class="timer">
+            <div><span id="years">0</span><p>Years</p></div>
+            <div><span id="months">0</span><p>Months</p></div>
+            <div><span id="days">0</span><p>Days</p></div>
+            <div><span id="hours">0</span><p>Hours</p></div>
+            <div><span id="minutes">0</span><p>Minutes</p></div>
+            <div><span id="seconds">0</span><p>Seconds</p></div>
+        </div>
+  </div>
+</section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Lovely Memories🥹</h2>
+            <div class="gallery-grid">
+                <div class="photo-card" data-aos="fade-up" data-delay="100">
+                    <div class="photo-container">
+                        <img src="https://res.cloudinary.com/dqdvnle7j/image/upload/v1776278037/Copy_of_signal-2025-06-07-21-31-26-873_sebp5y.jpg"
+                            alt="Beautiful moment">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">The Place everything started🥹💕</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="200">
+                    <div class="photo-container">
+                        <img src="https://res.cloudinary.com/dqdvnle7j/image/upload/v1776278124/Copy_of_IMG_1217_vh6qny.jpg"
+                            alt="Sweet memory">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">Short meetings with more Efforts made our days😌</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="300">
+                    <div class="photo-container">
+                        <img src="https://res.cloudinary.com/dqdvnle7j/image/upload/v1776278307/Copy_of_IMG_2575_pcbztl.jpg"
+                            alt="Happy times">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">Our first lovely out, by just spending in platform😂🥹💓</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="400">
+                    <div class="photo-container">
+                        <img src="https://res.cloudinary.com/dqdvnle7j/image/upload/v1776278526/Copy_of_IMG_20251010_012815_437_l29ruv.jpg"
+                            alt="Love moment">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">Cute moments together with KISS😘😍</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="500">
+                    <div class="photo-container">
+                        <img src="https://res.cloudinary.com/dqdvnle7j/image/upload/v1776278641/Copy_of_IMG-20260207-WA0336_tspibp.jpg"
+                            alt="Beautiful day">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">Made a lifetime memory surprising myself to my loved one🥹</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="600">
+                    <div class="photo-container">
+                        <img src="https://res.cloudinary.com/dqdvnle7j/image/upload/v1776278855/Copy_of_IMG-20260320-WA0059_qlyivo.jpg"
+                            alt="Romantic moment">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">Taking care of my baby🥰... by getting love bites😏😂❤️</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Message Section -->
+    <section class="message-section" id="message">
+        <div class="container">
+            <div class="message-card">
+                <h2 class="message-title">A Special Message for my special one😍</h2>
+                <div class="message-content">
+                    <p class="message-text fade-in-text">
+                        Oii chella kuttyyy😘💕... Finally, we have completed 3 years of our beautiful journey together and entering into 4rth year with lot more fun, Love and care🥰😍💓... and sandais too😁😅... You are always my beutiful one with cute and happy big smile bbyy😁😍...
+                        na unna idhu varaikum ennoda fullest love kamchu unna paathukkuten uh namburen🥹... inimelum indha love koraiyaama indha possessiveness koraiyama paathukkuren😁❤️💕... Love you so much bbyyy😌🥰...
+                        actual ah enakku enna soldradhunu therla😅... unakku indha gift pudikkum nu namburen bbyy😌... but enna irundhaalum namma first anniversary ku ni kudutha andha letter pac maari varadhu🥹🤌... 
+                        andha effort ku naduvula idhellam onnumeh illa... edho ennala mudunja enakku therinja way of showing this love🤗... vera enna sollalam bbyy ku🤔.... adha bbyyy... haan iru adutha para la continue pandren😁💕....
+                    </p>
+                    <p class="message-text fade-in-text">
+                        LOVE YOU SO MUCH THRIYAMBAHA🥹💕... Love you my LifeLine as you said🤗... I will always be there to love you unconditionally😍💓... I will always stand with you bbyy whatever the situation is... I CHOOSE YOU😌💕...
+                        and yeah... you can see the countdown timer section... indha timer namma life full ah oditeh irukkum bbyy🥹🥹... every year ipo ni paatha maari indha website namma anniversary ku pop party aagum... I hope you like it bbyy😌...
+                        YES😌... HAPPY 3RD LOVE ANNIVERSARY MY LOVE😌😌❤️💕... Koodiya seekaram wedding anniversary kondavuom😍💓... Love you so much🥹🫂❤️💕
+                    
+                    </p>
+                    <p class="message-signature fade-in-text">
+                       HAPPY 3RD LOVE ANNIVERSARY😌, my love ! Here's to many more years of laughter, love, and beautiful memories
+                        together. 💕
+                    </p>
+                </div>
+                <div class="message-hearts">
+                    <span class="heart-animation">💖</span>
+                    <span class="heart-animation">💕</span>
+                    <span class="heart-animation">💗</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="proposal-section" id="proposal">
+        <div class="container">
+            <div class="proposal-card">
+                <h2 class="proposal-title">Will you be with me forever?🥺👉💍👈</h2>
+                
+                <div class="proposal-playground" id="proposalPlayground">
+                    <button class="proposal-btn yes-btn" id="yesBtn" type="button">YES 🥹🤌</button>
+                    <button class="proposal-btn no-btn" id="noBtn" type="button">NO 😢</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="proposal-overlay" id="proposalOverlay" aria-hidden="true">
+        <div class="proposal-overlay-content">
+            <div class="proposal-overlay-message">Enakku theriyum di thangamehh ni no solla maata nu🥳😍... Love you too😁💓... Indha😘🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹💐💐🪷🪷</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
